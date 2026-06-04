@@ -1,0 +1,59 @@
+---
+title: "ACTFUN: Token Launchpad Where Community Mines the Supply"
+sidebarTitle: "Home"
+description: "ACTFUN lets communities mine 95% of every token supply by writing funny posts. Tokens auto-graduate to a built-in DEX on Arc Testnet."
+---
+
+ACTFUN is a community-mined token launchpad running on Arc Testnet. Instead of presales or airdrops, you earn tokens by writing a funny post and paying a small USDC fee. Once 95% of a token's supply is mined, it automatically graduates into its own built-in DEX — no bridges, no external exchange, no admin action required.
+
+<Note>
+  ACTFUN runs on **Arc Testnet** (Chain ID 5042002). All USDC used is free testnet USDC — no real money is involved. Get testnet USDC from the [Arc faucet](https://faucet.testnet.arc.network).
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="Quick Start" icon="rocket" href="/quickstart">
+    Add Arc Testnet to MetaMask, claim free USDC, and mine your first token in minutes.
+  </Card>
+  <Card title="Launch a Token" icon="coins" href="/guides/launch-token">
+    Deploy your own community-mined token with custom supply, fee, and cooldown settings.
+  </Card>
+  <Card title="Mine Tokens" icon="pickaxe" href="/guides/mining">
+    Write a funny post, pay the USDC fee, and receive tokens directly in your wallet.
+  </Card>
+  <Card title="Trade Tokens" icon="arrow-right-arrow-left" href="/guides/trading">
+    Buy and sell graduated tokens using the built-in constant-product AMM.
+  </Card>
+</CardGroup>
+
+## How ACTFUN works
+
+Every token on ACTFUN follows the same four-stage lifecycle — from creation to live trading — entirely on-chain.
+
+<Steps>
+  <Step title="Create a token">
+    Anyone can deploy a new token by setting its name, symbol, total supply, tokens per mine, per-wallet cooldown, daily mining cap, and USDC fee per mine. No backend, no admin keys — the contract handles everything.
+  </Step>
+  <Step title="Mine the supply">
+    Community members mine the token by writing a funny post and paying the USDC fee. Tokens land in the miner's wallet instantly. Cooldowns and daily caps are enforced in the smart contract to keep things fair.
+  </Step>
+  <Step title="Graduate automatically">
+    When 95% of the supply is mined, the contract graduates the token in the same transaction as the final mine. It mints the 5% LP reserve and seeds an AMM pool with all accumulated USDC fees.
+  </Step>
+  <Step title="Trade on the built-in DEX">
+    Once graduated, anyone can buy or sell the token using the constant-product AMM (x×y=k) built directly into the token contract — no bridging or external exchange needed.
+  </Step>
+</Steps>
+
+## Explore the docs
+
+<CardGroup cols={3}>
+  <Card title="Core Concepts" icon="book-open" href="/concepts/mine-to-launch">
+    Understand Mine-to-Launch, tokenomics, and the graduation AMM.
+  </Card>
+  <Card title="Platform Features" icon="star" href="/features/leaderboard">
+    Leaderboard, Hall of Fame, Creator Livestream, Global Feed, and more.
+  </Card>
+  <Card title="Smart Contracts" icon="file-code" href="/contracts/overview">
+    Full reference for LaunchpadFactory and TokenLauncher contract functions.
+  </Card>
+</CardGroup>
